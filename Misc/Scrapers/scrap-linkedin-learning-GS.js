@@ -21,14 +21,14 @@ var half_wait = 0;
 var total_time = 1;
 var last_title = '';
 
-var course_title = jQuery('.course-banner__meta-title').find('a').text() + ' - August 2017';
+var course_title = jQuery('.course-banner__meta-title').find('a').text() + ' - October 2016';
 console.log(course_title);
 
 // Adjust these two variables if course is NOT Downloaded completely
 // See last downloaded video, for example if last downloaded video is like 02_11_* .
 // Then enter 2 for main adjust and 11 for sub_adjust
-var main_adjust = 0;
-var sub_adjust = 0; // if 0-5 files are downloaded than 5
+var main_adjust = 3;
+var sub_adjust = 1; // if 0-5 files are downloaded than 5
 
 // DO NOT CHANGE BELOW ===========================================
 var adjust = 0; // Do not change it.. if 1 is downloaded completely then 1, if it breaks sometimes, we can use this to create correct sequence number.
@@ -144,18 +144,22 @@ function get_video_url(){
         console.log('Time: sec: ', secs);
 
         total_time = ((mins*60 + secs ) * 1000);
-        if (mins > 35){
+        if (mins >= 35){
             total_time = total_time/9;
-        } else if (mins > 25){
+        } else if (mins >= 25){
             total_time = total_time/8;
-        } else if (mins > 15){
+        } else if (mins >= 15){
             total_time = total_time/7;
-        } else if (mins > 10){
+        } else if (mins >= 10){
             total_time = total_time/5;
-        } else if (mins > 7){
+        } else if (mins >= 7){
             total_time = total_time/4;
+		} else if (mins >= 3){
+			total_time = total_time/3;
+		} else if (mins >= 2){
+            total_time = total_time/2;
         } else {
-            total_time = total_time/3;
+            total_time = total_time/2;
         }
 
         console.log('Total: mili sec: ', (total_time/1000));
@@ -209,6 +213,4 @@ jQuery(document).ready(function(){
     });
     get_video_url();
 });
-
-
 

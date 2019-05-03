@@ -1,0 +1,2 @@
+#create new blank project in current directory
+composer create-project --prefer-dist laravel/laravel project_directory_name

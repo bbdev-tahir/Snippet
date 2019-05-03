@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+table.add_cuf_table td
+{
+	vertical-align:top;
+}
+table.cuf_table td
+{
+	padding:10px;
+	border:1px solid #000;
+}
+table.cuf_table
+{
+	border-collapse:collapse;
+}
+table.add_cuf_table td
+{
+	border:none;
+}

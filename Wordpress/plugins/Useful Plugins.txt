@@ -1,0 +1,26 @@
+/*********** SEO ********************/
+Yoast SEO By Team Yoast (Fav)
+
+
+
+/********** Backup *******************/
+BackUpWordPress By XIBO Ltd By Human Made Limited (Fav)
+WP Migrate DB By Delicious Brains (Fav)
+
+
+
+/********* Performance **************/
+Async JavaScript By Frank Goossens (futtta) (Fav)
+Autoptimize By Frank Goossens (futtta)	(Fav)
+reSmush.it Image Optimizer By reSmush.it (Fav)
+WP Super Cache By Automattic (Fav)
+Check and Enable GZIP compression By Richard's Toolbox
+Smush By WPMU DEV
+W3 Total Cache By Frederick Townes
+
+
+
+/********* Misc **************/
+Contact Form 7 By Takayuki Miyoshi (Fav)
+Safe SVG By Daryll Doyle (Fav)
+Polylang By Frédéric Demarle (Fav)

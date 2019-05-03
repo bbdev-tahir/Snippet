@@ -1,0 +1,2 @@
+Bootstrap 4 carousel display 4 slided and slide 1 item each time,
+https://medium.com/wdstack/bootstrap-4-custom-carousel-94a537364fde

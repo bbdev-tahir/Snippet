@@ -1,0 +1,16 @@
+/******** Add below code in functions.php file**********/
+
+if ( ! function_exists( 'mytheme_setup' ) ){
+  function mytheme_setup() {
+    add_image_size('mytheme-medium', 400, 290, array( 'left', 'top' ));
+  }
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
+
+function mytheme_custom_sizes( $sizes ) {
+  return array_merge( $sizes, array(
+      'mytheme-medium' => __('Mytheme Medium'),
+      //'single-post-small' => __('Your Small Size Name'),
+  ) );
+}
+add_filter( 'image_size_names_choose', 'mytheme_custom_sizes' );

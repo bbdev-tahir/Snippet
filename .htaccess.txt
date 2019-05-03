@@ -1,0 +1,2 @@
+#Popping the below line into your .htaccess file will disable directory listings; so, users will get a “403 Forbidden” message if they try to view a directory
+Options -Indexes

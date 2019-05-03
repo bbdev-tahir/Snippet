@@ -1,1 +1,8 @@
+#For free Premimum plugins
+	http://www.wplocker.com
+
+
 https://code.tutsplus.com/tutorials/how-to-create-infinite-scroll-pagination--wp-24873
+
+http://mikemclin.net/single-users-table-multiple-wordpress-sites/
+

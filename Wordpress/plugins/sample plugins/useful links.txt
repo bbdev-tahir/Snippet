@@ -1,0 +1,2 @@
+// Validate the readme.txt file of your plugin.
+https://wordpress.org/plugins/developers/readme-validator/

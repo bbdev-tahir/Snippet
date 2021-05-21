@@ -1,0 +1,12 @@
+res = zoho.crm.getRecordById("Contacts",contactID);
+mp = Map();
+mp.put("module","contacts");
+mp.put("action","create/edit");
+mp.put("contact_id",contactID);
+mp.put("data",res);
+send_data = invokeurl
+[
+	url :"http://new-car.s453.upress.link/"
+	type :POST
+	parameters:mp.toString()
+];

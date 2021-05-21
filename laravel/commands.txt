@@ -1,2 +1,16 @@
 #create new blank project in current directory
 composer create-project --prefer-dist laravel/laravel project_directory_name
+
+//install all js dependencies
+npm install
+
+// Run all Mix tasks...
+npm run dev
+
+// Run all Mix tasks and minify output...
+npm run production
+
+npm run watch
+
+// View laravel version
+vendor/laravel/framework/src/Illuminate/Foundation/Application.php

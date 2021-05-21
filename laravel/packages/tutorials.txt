@@ -1,0 +1,2 @@
+#create new package
+https://devdojo.com/tutorials/how-to-create-a-laravel-package

@@ -1,0 +1,2 @@
+#Spatie Laravel Permission Package Tutorial
+https://www.youtube.com/watch?v=zIgYJlu03bI&list=PLe30vg_FG4OQKaLJodH9E8htPvfj7jamt&index=2&t=0s

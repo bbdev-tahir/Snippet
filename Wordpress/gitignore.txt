@@ -5,6 +5,7 @@ php.ini
 *.zip
 
 .user.ini
+/robots.txt
 /.htaccess
 /nginx.conf
 /phpmyadmin
@@ -15,6 +16,8 @@ php.ini
 
 /wp-config.php
 wp-content/themes/gulp
+wp-content/themes/gulp-dev
 wp-content/cache
 wp-content/wp-cache-config.php
 wp-content/advanced-cache.php
+wp-content/debug.log

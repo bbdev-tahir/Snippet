@@ -3,12 +3,28 @@
 /******************************************/
 /***** Debug functions start from here **********/
 /******************************************/
-function bb_shutdown()
-{
-echo '<div style="color:#fff;position:fixed;bottom:20px;left:0px; background-color:#000;">'.$time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"].'</div>';
+if(!function_exists("bb_shutdown")){
+  function bb_shutdown()
+  {
+    if(!(defined('DOING_AJAX') && DOING_AJAX)){
+		if(!(isset($_GET['action']) && $_GET['action'] == 'elementor')){
+			echo '<div style="color:#fff;position:fixed;bottom:20px;left:0px; background-color:#000; z-index:999999999;">'.$time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"].'</div>';
+		}
+      
+    }
+	}
+	
+	add_action('wp_loaded', function(){
+		//if(isset($_GET['test']) && $_GET['test'] == 'admin'){
+			if(is_user_logged_in()){
+				$current_user = wp_get_current_user();
+				if($current_user->user_email == 'tahir@otw.design'){
+					register_shutdown_function('bb_shutdown');
+				}
+			}		
+		//}
+	});
 }
-
-//register_shutdown_function('bb_shutdown');
 
 
 if(!function_exists('alert')){
@@ -26,6 +42,13 @@ if(!function_exists('db')){
 		var_dump($array1);
 		echo "</pre>";
 	}
+}
+
+/******************************************/
+/***** isLocalhost **********/
+/******************************************/
+function isLocalhost($whitelist = ['127.0.0.1', '::1']) {
+    return in_array($_SERVER['REMOTE_ADDR'], $whitelist);
 }
 
 /******************************************/
@@ -68,9 +91,9 @@ if(!function_exists("ArraytoSelectList")){
 		$output = '';
 		foreach($array as $key=>$value){
 			if($key == $sValue)
-				$output .= '<option value="'.esc_attr($key).'" selected="selected">'.$value.'</option>';
+				$output .= '<option value="'.esc_attr($key).'" selected="selected">'.esc_html($value).'</option>';
 			else
-				$output .= '<option value="'.$key.'">'.$value.'</option>';
+				$output .= '<option value="'.esc_attr($key).'">'.esc_html($value).'</option>';
 		}
 		return $output;
 	}
@@ -102,3 +125,13 @@ if(!function_exists("ArraytoSelectList")){
         return array();
     }
   }
+  
+  /******************************************/
+  /***** show_admin_bar **********/
+  /******************************************/
+  add_filter('show_admin_bar', '__return_false');
+  
+
+
+
+	

@@ -13,10 +13,3 @@ define('WP_POST_REVISIONS', false );
 /********** Disable wp-debug on production server **************/
 /******************************************/
 define('WP_DEBUG', false);
-
-
-/******************************************/
-/********** Disable wp-cron **************/
-/* if you will disable it then you have to manually run "http://example.com/wp-cron.php" every day. */
-/******************************************/
-define( 'DISABLE_WP_CRON',      true );

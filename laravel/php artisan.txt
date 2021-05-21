@@ -1,0 +1,8 @@
+#View all available commands for php artisan
+php artisan
+
+#View current laravel version
+php artisan --version
+
+#Removing The Frontend Scaffolding
+php artisan preset none

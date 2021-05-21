@@ -1,0 +1,17 @@
+function OTWValidateIsraelPhoneNumber(phone) {
+		if (/^((\+|00)?972\-?|0)(([23489]|[57]\d)\-?\d{7})$/.test(phone))
+			return (true)
+		return (false)
+	}
+
+	function validate_otw_form(){
+		jQuery(document).ready(function($){
+			jquery_object = $(".israel_phone_number");
+			if(jquery_object.length >= 1){
+				if(!OTWValidateIsraelPhoneNumber(jquery_object.val()))
+				jquery_object[0].setCustomValidity(jquery_object.data('error-message'));
+			else
+				jquery_object[0].setCustomValidity('');
+			}
+		});
+	}

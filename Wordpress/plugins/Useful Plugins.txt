@@ -1,3 +1,12 @@
+/*********** SMTP ********************/
+Postman SMTP by  Jason Hendriks
+Post SMTP Mailer/Email Log By Yehuda Hassine
+
+
+/*********** Multi Language ********************/
+Loco Translate By Tim Whitlock
+
+
 /*********** SEO ********************/
 Yoast SEO By Team Yoast (Fav)
 
@@ -6,6 +15,8 @@ Yoast SEO By Team Yoast (Fav)
 /********** Backup *******************/
 BackUpWordPress By XIBO Ltd By Human Made Limited (Fav)
 WP Migrate DB By Delicious Brains (Fav)
+WP phpMyAdmin By Puvox.software
+Duplicator By Snap Creek
 
 
 
@@ -24,3 +35,12 @@ W3 Total Cache By Frederick Townes
 Contact Form 7 By Takayuki Miyoshi (Fav)
 Safe SVG By Daryll Doyle (Fav)
 Polylang By Frédéric Demarle (Fav)
+
+
+/************* Maintenance **********/
+WP Maintenance Mode By Designmodo
+
+
+00D5g000004DauD
+00D4J000000FUWp
+Redirect 301 /lp https://lp.mycleanbit.com/

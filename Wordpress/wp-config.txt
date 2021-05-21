@@ -1,4 +1,40 @@
 /******************************************/
+/**********Disable Revisions **************/
+/*Open wp-config.php located in your WordPress root directory and add the following code:*/
+/*This code will disable all future revisions to be saved and it will also increase your autosave interval from 60 seconds to 300 seconds*/
+/******************************************/
+define('AUTOSAVE_INTERVAL', 846000 ); //40 min
+define('WP_POST_REVISIONS', false );
+
+
+/******************************************/
 /********** Disable File Editor **************/
 /******************************************/
 define( 'DISALLOW_FILE_EDIT', true );
+
+
+/******************************************/
+/********** Enable debug log which can bee seen from "wp-content/debug.log" **************/
+/******************************************/
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+define( 'WP_DEBUG_LOG', true );
+
+
+/******************************************/
+/********** Set files and folder permission **************/
+/******************************************/
+define('FS_CHMOD_DIR', (0775 & ~ umask()));
+define('FS_CHMOD_FILE', (0664 & ~ umask()));
+
+
+/******************************************/
+/********** Disable WP cron **************/
+/******************************************/
+define('DISABLE_WP_CRON', true);
+
+
+/******************************************/
+/********** wp php memory limit **************/
+/******************************************/
+define('WP_MEMORY_LIMIT', '256M');

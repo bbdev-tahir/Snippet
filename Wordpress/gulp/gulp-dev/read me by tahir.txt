@@ -1,0 +1,17 @@
+Copy "gulp-dev" folder to your "wp-content/themes" folder.
+cd "gulp-dev" directory from your command line.
+
+#Run below command
+npm install -g npm-check-updates
+ncu -u
+npm update
+npm install
+
+
+#open "wp-content/themes/gulp-dev/gulp.js" file and change below variables according to your theme.
+
+var themename = 'YourThemeFolderName';
+proxy: 'localhost/yoursitename',
+
+#cd "gulp-dev" directory from your command line. run below command to run the gulp.
+gulp

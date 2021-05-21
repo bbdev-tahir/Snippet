@@ -1,2 +1,5 @@
 #Bootstrap snippets
 https://bootsnipp.com/snippets/orE6Z
+
+#Full width page height slider
+https://startbootstrap.com/snippets/full-slider/

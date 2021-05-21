@@ -1,0 +1,2 @@
+user this class in following projects.
+1- http://localhost/warraichtraders/wp-admin/admin.php?page=loanborrower

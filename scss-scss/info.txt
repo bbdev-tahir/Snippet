@@ -1,0 +1,2 @@
+#How to compile scss
+https://sunlightmedia.org/using-node-sass-to-compile-sass-files-in-an-npm-script/

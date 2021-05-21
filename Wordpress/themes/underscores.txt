@@ -1,0 +1,12 @@
+Blank theme to create new wordpress theme from scratch.
+
+#open this url and then click "advanced options" and fill the below fields.
+https://underscores.me/
+
+Theme Name:		Your Theme name 
+Theme Slug: 	yourthemename	
+Author: 		ByteBunch
+Author URI: 	https://bytebunch.com
+Description:	HTML5 Blank Theme Developed by Bytebunch
+
+#Create "images" and "images/RAW" folders in your newly download theme.

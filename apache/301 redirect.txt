@@ -1,0 +1,5 @@
+Redirect 301 /store/matronita/ https://bechic.co.il/matronita-shop/
+Redirect 301 /store/melody/ https://bechic.co.il/melodi-store/
+Redirect 301 /store/pego/ https://bechic.co.il/pecho-shop/
+Redirect 301 /store/shlomts/ https://bechic.co.il/shlomts-shop/
+Redirect 301 /store/switch/ https://bechic.co.il/switch-shop/
